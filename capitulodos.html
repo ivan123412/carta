@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Capítulo 2</title>
+  </head>
+  <body style="margin:0; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; background:#ffffff; font-style:italic; font-size:1.25rem;">
+
+    <div id="text-area" 
+     style="
+       text-align:left; 
+       margin-bottom:20px; 
+       max-width:600px; 
+       padding:0 20px; 
+       line-height:1.6; 
+     ">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h1 style="
+        margin:0; 
+        margin-bottom:20px; 
+        font-weight:bold; 
+        font-style:italic; 
+        font-size:2rem; 
+      ">
+    Relacion
+  </h1>
+
+  <p style="margin:0; margin-top:10px;">
+    Me sentia en las nubes, todas las canciones de amor cobraban sentido, no solo eran canciones cursis para enamorados, realmente era genial que una cancion adaptara exactamente lo que sentia en letras, entre tantas canciones en mi spotify, se me cruzo "brillas" de León Larregui, juro que mi piel se hacia de gallina al escucharla y simplemente pensar en ella, asi que fue inevitable decir, es su cancion, es la de May, es una obra de arte, al igual que ella. Pasaban las semanas, meses, algun que otro problema, pero todo se resolvia con facilidad, muchas mas risas, algun que otro video grabado, porque a mi parecer era tanta felicidad que la vida no nos daba para sacar el celular y grabar o tomar fotos de lo que haciamos, en esos momentos de locura fue inevitable no identificarme con "Locos" de nuevo de León Larregui, una cancion que refleja para mi la locura del amor, risas, bromas, hasta una que otra picada de cola de May jajaja, que logicamente yo tenia que devolverle, igual algunos problemas que finalmente se resolvian hablando, con normalidad, "Locos", si me lo preguntas abarca perfectamente a May y Yo, dos adolescentes enamorados, disfrutando la locura del amor, incluso en los momentos de solo de estar sentados, una con la pierna arriba del otro.
+  </p>
+    <p style="margin:0; margin-top:10px;">
+    Llegamos a un punto de puro y simple amor, con lo que eso conlleva, genial, imagina tener a tu pareja en tu salon y poder levantarte de tu lugar a abrazarla cuando quieras, simplemente hermoso. La relacion fue evolucionando a un punto que mis papas tenian que conocer a mi personita, asi que, lo hicimos, los saludo, todo en las fiestas de la Judeo de Jala, todo perfecto, y desde ahi abrio la posivilidad de que May estuviera un poco mas en mi casa, saludar un rato a Roco, comer tal vez, y volver a casa.
+    </p>
+    <p style="margin:0; margin-top:10px;">
+    El amor es genial, ningun problema podia con nosotros. No era apego, simplemente sabiamos nuestras diferencias, y que los problemas no eran para nada raros o contundentes, solo eran diferencias, nada que no se pueda resolver.
+    </p>
+</div>
+
+    <div id="buttons" style="display:flex; flex-direction:column; gap:12px; align-items:center; justify-content:center;">
+      <button style="font-style:italic; font-size:1.25rem; padding:10px 18px; border-radius:12px; border:1px solid #e0e0e0; background:linear-gradient(180deg,#fff7f0,#ffeedd); box-shadow:0 6px 18px rgba(0,0,0,0.08); cursor:pointer; transition:transform .12s ease, box-shadow .12s ease; width:180px;" onclick="window.location.href='capitulotres.html'">
+        Siguiente
+      </button>
+      <br><br><br>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll('#buttons button');
+      buttons.forEach(b=>{
+        b.addEventListener('mouseover', ()=> b.style.transform='translateY(-3px)');
+        b.addEventListener('mouseout', ()=> b.style.transform='translateY(0)');
+        b.addEventListener('mousedown', ()=> b.style.boxShadow='0 4px 10px rgba(0,0,0,0.12)');
+        b.addEventListener('mouseup', ()=> b.style.boxShadow='0 6px 18px rgba(0,0,0,0.08)');
+      });
+    </script>
+
+    <audio autoplay hidden>
+      <source src="locosaudio.mp3" type="audio/mpeg">
+    </audio>
+
+  </body>
+</html>

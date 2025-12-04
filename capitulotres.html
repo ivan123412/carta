@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Capítulo 3</title>
+  </head>
+  <body style="margin:0; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; background:#ffffff; font-style:italic; font-size:1.25rem;">
+
+    <div id="text-area" 
+     style="
+       text-align:left; 
+       margin-bottom:20px; 
+       max-width:600px; 
+       padding:0 20px; 
+       line-height:1.6; 
+     ">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h1 style="
+        margin:0; 
+        margin-bottom:20px; 
+        font-weight:bold; 
+        font-style:italic; 
+        font-size:2rem; 
+      ">
+    Universidad
+  </h1>
+
+  <p style="margin:0; margin-top:10px;">
+   Esta capitulo se llama "Universidad". Lamentablemente en cada pelicula de amor, algo le tiene que pasar a los protagonistas, como en la vida hay obstaculos, lamentablemente nuestra etapa en el CBTIS tenia una fecha marcada para terminar, ambos los sabiamos, y recuerdo lo hermoso que fue que nos propusimos disfrutarla al maximo, algun que otro video, pero muchas, muchas risas, ambos sabiamos que el tiempo ahi estaba contado, pero nuestra vida juntos no tenia porque cambiar, las fechas llegaron, la graduacion se dio, fue una semana entera sin sabor para mi, recuerdo que me llevaron a comer a Tepic, y realmente no me supo, super bien todo pero, sabia que el siguiente lunes ya no tendria a todas las personas que me acompañaron durante tres años, y sobre todo no tendria diario a esa personita tan especial que me regalo mi etapa en el CBTIS. Los examenes de admision llegaron, ambos aceptados. 
+  </p>
+  <p style="margin:0; margin-top:10px;">
+    La separacion se dio, un dolor tremendo, pero siempre con la promesa que volveria por ella pase lo que pase, no la dejaria ahi, se lo prometi mientras ella lloraba desconsoladamente, haciendome llorar a mi tambien, recuerdo bien besar su frente, siempre ah sido una forma de intentar traerle paz. Entonces manos a la obra, no hay vuelta atras, la presion de una escuela de otro estado mejor de el que vienes es grande, temas complejos, compañeros mas inteligentes, pero nada que el esfuerzo no pueda, pero siempre, siempre, teniendo a mi motivacion por delante, ELLA, unos dias que ambos estabamos bastante ocupados, y unicamente teniamos una hora de la tarde para contarnos bien nuestro dia, obviamente hablando por whatsapp durante el dia, ambos sabiamos que seria dificil, llego un punto que Pin se desacostumbro un poco a hacer llamadas para dormir, porque literalmente no podemos, pero el amor ahi esta. 
+  <p style="margin:0; margin-top:10px;">
+    La distancia fue dolorosa para mi, a un punto que tuve que esperar al dia siguiente de su cumpleaños para verla, para poder ahorrarme 400 pesos de un pasaje, esa tarde la pase muy triste, pero emocionado que mañana podria darle sus obsequios, la distancia es dura, pero soportaria hasta caminar por vidrios descalzo por cumplir mis sueños con ella. Porque como dice la cancion "When you know, you know". "Maybe tomorrow, you'll know", de hecho esa cancion es muy bonita, tanto que en una parte menciona "The party is December 18".
+  </p><br>
+</div>
+
+    <div id="buttons" style="display:flex; flex-direction:column; gap:12px; align-items:center; justify-content:center;">
+      <button style="font-style:italic; font-size:1.25rem; padding:10px 18px; border-radius:12px; border:1px solid #e0e0e0; background:linear-gradient(180deg,#fff7f0,#ffeedd); box-shadow:0 6px 18px rgba(0,0,0,0.08); cursor:pointer; transition:transform .12s ease, box-shadow .12s ease; width:180px;" onclick="window.location.href='final.html'">
+        Siguiente
+      </button>
+      <br><br><br><br>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll('#buttons button');
+      buttons.forEach(b=>{
+        b.addEventListener('mouseover', ()=> b.style.transform='translateY(-3px)');
+        b.addEventListener('mouseout', ()=> b.style.transform='translateY(0)');
+        b.addEventListener('mousedown', ()=> b.style.boxShadow='0 4px 10px rgba(0,0,0,0.12)');
+        b.addEventListener('mouseup', ()=> b.style.boxShadow='0 6px 18px rgba(0,0,0,0.08)');
+      });
+    </script>
+
+   <audio autoplay hidden>
+      <source src="margaret.mp3" type="audio/mpeg">
+    </audio>
+
+  </body>
+</html>
