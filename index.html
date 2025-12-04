@@ -1,36 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inicio</title>
-  </head>
-  <body style="margin:0; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; background:#ffffff; font-style:italic; font-size:1.25rem;">
-    <div id="text-area" style="text-align:center; margin-bottom:20px;">
-      <p style="margin:0; text-align:left;">Hola mi niña, soy yo de nuevo.</p>
-      <p style="margin:0; margin-top:10px; text-align:left;">Lamento no poder pasar ni siquiera un día en contacto 0.</p>
-      <p style="margin:0; margin-top:10px; text-align:left;">Lamento llegar a un punto que me tengas que pedir que te deje en paz.</p>
-      <p style="margin:0; margin-top:10px; text-align:left;">Hice esto realmente con la mano en el corazon, por favor leelo.</p>
-    </div><br>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inicio</title>
 
-    <div id="buttons" style="display:flex; flex-direction:column; gap:12px; align-items:center; justify-content:center;">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-style: italic;
+      font-size: 1.25rem;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;     /* ← Centra el contenido verticalmente */
+      align-items: center;
+      min-height: 100vh;
+    }
 
-      <button style="font-style:italic; font-size:1.25rem; padding:10px 18px; border-radius:12px; border:1px solid #e0e0e0; background:linear-gradient(180deg,#fff7f0,#ffeedd); box-shadow:0 6px 18px rgba(0,0,0,0.08); cursor:pointer; transition:transform .12s ease, box-shadow .12s ease; width:180px;"
-      onclick="window.location.href='capitulouno.html'">
-        Capitulo 1
-      </button>
+    #content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 600px;
+      width: 100%;
+    }
 
+    #text-area {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 40px;         /* Espacio entre texto y botón */
+    }
 
+    #text-area p {
+      margin: 0;
+      margin-top: 12px;
+    }
+
+    #buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    #buttons button {
+      font-style: italic;
+      font-size: 1.25rem;
+      padding: 10px 18px;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      background: linear-gradient(180deg,#fff7f0,#ffeedd);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      cursor: pointer;
+      transition: transform .12s ease, box-shadow .12s ease;
+      width: 180px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 15px;
+        font-size: 1.1rem;
+      }
+
+      #buttons button {
+        width: 160px;
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="content">
+    <div id="text-area">
+      <p>Hola mi niña, soy yo de nuevo.</p>
+      <p>Lamento no poder pasar ni siquiera un día en contacto 0.</p>
+      <p>Lamento llegar a un punto que me tengas que pedir que te deje en paz.</p>
+      <p>Hice esto realmente con la mano en el corazón, por favor léelo.</p>
     </div>
 
-    <script>
-      const buttons = document.querySelectorAll('#buttons button');
-      buttons.forEach(b=>{
-        b.addEventListener('mouseover', ()=> b.style.transform='translateY(-3px)');
-        b.addEventListener('mouseout', ()=> b.style.transform='translateY(0)');
-        b.addEventListener('mousedown', ()=> b.style.boxShadow='0 4px 10px rgba(0,0,0,0.12)');
-        b.addEventListener('mouseup', ()=> b.style.boxShadow='0 6px 18px rgba(0,0,0,0.08)');
-      });
-    </script>
-  </body>
+    <div id="buttons">
+      <button onclick="window.location.href='capitulouno.html'">Siguiente</button>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('#buttons button');
+    buttons.forEach(b => {
+      b.addEventListener('mouseover', ()=> b.style.transform='translateY(-3px)');
+      b.addEventListener('mouseout', ()=> b.style.transform='translateY(0)');
+      b.addEventListener('mousedown', ()=> b.style.boxShadow='0 4px 10px rgba(0,0,0,0.12)');
+      b.addEventListener('mouseup', ()=> b.style.boxShadow='0 6px 18px rgba(0,0,0,0.08)');
+    });
+  </script>
+
+</body>
 </html>

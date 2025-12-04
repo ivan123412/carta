@@ -4,58 +4,123 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Final</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        font-style: italic;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+      }
+
+      #text-area {
+        max-width: 600px;
+        width: 100%;
+        text-align: left;
+      }
+
+      h1 {
+        margin-top: 40px;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      p {
+        margin-top: 14px;
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 15px;
+          font-size: 1rem;
+        }
+
+        h1 {
+          font-size: 1.6rem;
+          margin-top: 20px;
+        }
+      }
+
+      #tap-to-play {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        font-style: italic;
+        z-index: 9999;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
   </head>
-  <body style="margin:0; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; background:#ffffff; font-style:italic; font-size:1.25rem;">
 
-    <div id="text-area" 
-     style="
-       text-align:left; 
-       margin-bottom:20px; 
-       max-width:600px; 
-       padding:0 20px; 
-       line-height:1.6; 
-     ">
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <h1 style="
-        margin:0; 
-        margin-bottom:20px; 
-        font-weight:bold; 
-        font-style:italic; 
-        font-size:2rem; 
-      ">
-    Final
-  </h1>
+  <body>
 
-  <p style="margin:0; margin-top:10px;">
-   Hola mi amor, cuanto extraño llamarte asi mi vida, con lagrimas en los ojos te escribo esto desde lo mas profundo de mi corazon.
-</p>
-  <p style="margin:0; margin-top:10px;">
-  Con todo lo que ah pasado este tiempo, se que estas un poco desgastada mentalmente, lo se mi amor, igual yo, eso de no saber que va a pasar con mi amor, es algo que rodea mi cabeza cada minuto, finalmente has decidido dejar esto, me duele que dijeras que cada quien hizo su vida, tu alla y yo aca, lo que no sabes que mi vida aca gira entorno a que acaben las semanas para volver a verte, no te juzgo por estar cansada, no te negare que me duele mucho la decision, sin embargo la respeto, me duele porque te amo como el primer mes, como la primera vez que te dije te amo, como la primera vez en todo, porque tu eres eso, mi primera vez en todo.
-</p>
-  <p style="margin:0; margin-top:10px;">
-   No te juzgo, ni culpo por lo que esta pasando, obviamente tienes tus razones para irte, lo entiendo perfectamente, perdon si no puedo pasar un dia de contacto 0, es que literalmente eres mi daily chat desde hace 3 años, y no poderte contar mi dia es un dolor tremendo, no tengo a mi cielo conmigo que me acompañe en caso que algo me salga mal, que me de la fuerza para levantarme, me duele un poco que me digas que ya te deje en paz, solo extraño a Pin, te lo digo con lagrimas en los ojos justo ahora, pero no te estoy culpando ni nada, solo estas manteniendo tu decision y lo entiendo perfecto
-  </p>
-  <p style="margin:0; margin-top:10px;">
-  Me duele todo, porque siento que te vas de mi vida para siempre, al final creo que volviste a donde fuiste feliz, y esta bien, solo que debo aprender y acostumbrarme un poco a no volver a ver a mi niña, cada dia creo que eres mas firme y me extrañas un poco menos, eso es genial, lo haces bien mi amor, estoy feliz por ti.
-</p>
-<p style="margin:0; margin-top:10px;">
-  Nunca pense cambiar de opinion, pero esta vez, si te amo debo respetar que te quieres ir, por mas que me duela, es tu decision, y sinceramente creo no querras volver despues, aunque en su momento en una de esas miles llamadas nocturnas nos dijimos uno al otro "Si por alguna u otra razon nos dejaramos, nos volveremos a buscar", te amo mi amor, te amo como el primer dia, lamento que te tengas que ir mi niña, me duele, me voy el jueves de esta semana, es oficial, estare libre de clases, estare mas de un mes alla, y me duele que no estes conmigo, porque te aseguro mi amor, que si no fuera por la maldita distancia, cualquier problema que tuvieramos lo hablariamos mientras estuvieramos abrazados, asi resolviamos los problemas, no cambiaron las cosas, ni nada parecido, siemre han existido problemas, solo que antes te tenia cerca para besar tu frente y mirarte a los ojos para preguntar "¿que pasa? y pedirte que por favor no llores mientras te doy un besito en la frente".
-</p>
-<p style="margin:0; margin-top:10px;">
-Si dios me lo permite desde el jueves por la tarde estare en jala, tan cerca de mi amor, pero tan lejos de mi amor.
-</p>
-<p style="margin:0; margin-top:10px;">
-Y si Pin en una de sus tantas preguntas que me hacia en llamada antes de dormir me preguntara "¿Que prefieres, olvidarme, o volver a enamorarnos?, yo sin dudarlo te preguntaria ¿Cual es tu color favorito?"
-</p>
-<p style="margin:0; margin-top:10px;">
-Atentamente, Perita</p><br>
-</div>
+    <div id="tap-to-play">Capitulo final</div>
 
-   
+    <div id="text-area">
 
-    <audio autoplay hidden>
+      <h1>Final</h1>
+
+      <p>Hola mi amor, cuanto extraño llamarte asi mi vida, con lagrimas en los ojos te escribo esto desde lo mas profundo de mi corazon, mi plan original era invitarte a cenar al corzo en cuanto volviera de aca, en cuanto se rompiera la maldita distancia por lo menos un mes, me encanto jugar contigo mientras esperabamos comida, me encanto</p>
+
+      <p>Con todo lo que ah pasado este tiempo, se que estas un poco desgastada mentalmente, lo se mi amor, igual yo, eso de no saber que va a pasar con mi amor, es algo que rodea mi cabeza cada minuto...</p>
+
+      <p>No te juzgo, ni culpo por lo que esta pasando, obviamente tienes tus razones para irte, lo entiendo perfectamente...</p>
+
+      <p>Me duele todo, porque siento que te vas de mi vida para siempre, al final creo que volviste a donde fuiste feliz...</p>
+
+      <p>Yo tambien llore por la relacion Pin, demasiado, y se que piensas que estas haciendo super bien en alejarte de esta carcel de apego, yo tambien llore diciendo, nose porque paso eso, pero en el futuro no volvera a pasar y seremos felices, siempre pense asi, y me duele que te vayas cuando lo ultimo que quise fue herirte, no digo que una relacion sea una carcel, solo siento que hablando las cosas de forma bonita y bien no llegaria a pasar algo que haga pasarnos un mal rato</p>
+
+      <p>Nunca pense cambiar de opinion, pero esta vez, si te amo debo respetar que te quieres ir, por mas que me duela...</p>
+
+      <p>Si dios me lo permite desde el jueves por la tarde estare en Jala, tan cerca de mi amor, pero tan lejos de mi amor.</p>
+
+      <p>Si te quieres ir, debo respetar eso, pero amo contarte mi dia, necesito contarte como me va en mi vida, porque eres tu, la unica, mi mejor amiga, por eso lamento si te incomode buscandote para hablar, solo extraño mucho a Pin, por lo que si quieres irte debo pedirte que me bloquees, y me borres de todos lados, para aunque quiera no poder decirle a Pin lo que paso en el dia. Solo no me quiero ir para siempre Pin, pero repito, lo hare si tu me lo pides, porque asi de grande es mi amor, si tu lo necesitas te entrego lo que mas quiero y eh querido</p>
+
+      <p>Y si Pin en una de sus tantas preguntas que me hacia en llamada antes de dormir me preguntara "¿Que prefieres, olvidarme, o volver a enamorarnos?, yo sin dudarlo te preguntaria ¿Cual es tu color favorito?"</p>
+
+      <p>Te conozco tanto que si un dia olvidas quien eres, te podria dar clases intensivas de tu vida</p>
+
+      <p>Esta carta demuestra que querer es poder, ya que aunque estemos a cientos de kilometros ncontre la forma de hacerte llegar una pequeña parte de mi corazon transformado en texto.</p>
+
+      <p>Atentamente, Perita</p>
+
+    </div>
+
+    <audio id="musica">
       <source src="lalaland.mp3" type="audio/mpeg">
     </audio>
+
+    <script>
+      const musica = document.getElementById("musica");
+      const pantalla = document.getElementById("tap-to-play");
+
+      const iniciar = () => {
+        musica.play().then(() => {
+          pantalla.style.display = "none";
+        }).catch(() => {
+          pantalla.innerText = "Toca nuevamente para iniciar la música";
+        });
+        document.removeEventListener("click", iniciar);
+        document.removeEventListener("touchstart", iniciar);
+      };
+
+      document.addEventListener("click", iniciar);
+      document.addEventListener("touchstart", iniciar);
+    </script>
 
   </body>
 </html>
